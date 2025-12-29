@@ -13,7 +13,7 @@ This document provides a comprehensive explanation of how the Dependabot Core co
 - [Docker Architecture](#docker-architecture)
 - [Native Helpers](#native-helpers)
 - [Data Flow](#data-flow)
-- [Adding a New Ecosystem](#adding-a-new-ecosystem)
+- [Adding a New Ecosystem (Educational)](#adding-a-new-ecosystem-educational)
 - [Security Model](#security-model)
 
 ---
@@ -939,7 +939,7 @@ pr = pr_creator.create
 
 ---
 
-## Adding a New Ecosystem
+## Adding a New Ecosystem (Educational)
 
 > **Note**: Dependabot Core is not currently accepting new ecosystem contributions. This section is for educational purposes and for understanding how the system works.
 
@@ -1358,9 +1358,9 @@ Dependabot Core is a sophisticated system for automated dependency management. I
 To start working with Dependabot Core:
 
 1. **Clone the repository**
-2. **Run the development shell**: `bin/docker-dev-shell <ecosystem>`
-3. **Try a dry-run**: `bin/dry-run.rb <ecosystem> <repo>`
+2. **Run the development shell**: `bin/docker-dev-shell bundler`
+3. **Try a dry-run**: `bin/dry-run.rb bundler owner/repo-name`
 4. **Read the ecosystem code**: Look at existing implementations
-5. **Run tests**: `cd <ecosystem> && rspec spec`
+5. **Run tests**: `cd bundler && rspec spec`
 
 Good luck exploring Dependabot Core! 🤖
